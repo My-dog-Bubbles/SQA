@@ -7,13 +7,13 @@
 **Test Type:** Positive 
 **Preconditions:** user has the correct file Content Policy, size, length, resolution, aspect ratio, Frame Rate, and caption and Hashtags(if applicable).
 **Test Steps:**  
- * Tap "+" button to access upload screen
- * Tap "Upload" to select from device storage
- * Select test video file "test_video.mp4"
- * Verify video preview loads
- * Tap "Next"
- * Add caption: "Test upload"
- * Tap "Post"
+ - [ ] Tap "+" button to access upload screen
+ - [ ] Tap "Upload" to select from device storage
+ - [ ] Select test video file "test_video.mp4"
+ - [ ] Verify video preview loads
+ - [ ] Tap "Next"
+ - [ ] Add caption: "Test upload"
+ - [ ] Tap "Post"
 **Test Data:** Format: MOV
 **Expected Result:** File uploads correctly because the format is one of the correct type. The videos appears on the users profile and is playable.
 **Priority:** High
@@ -27,14 +27,14 @@
 **Test Type:** Positive 
 **Preconditions:** user has the correct file Content Policy, Format, length, resolution, aspect ratio, Frame Rate, and caption and Hashtags(if applicable).
 **Test Steps:**  
- * film video
- * check file size
- * Tap "+" button to access upload screen
- * Tap "Upload" to select from device storage
- * Verify video preview loads
- * Tap "Next"
- * Add caption: "Test upload"
- * Tap "Post"
+ - [ ] film video
+ - [ ] check file size
+ - [ ] Tap "+" button to access upload screen
+ - [ ] Tap "Upload" to select from device storage
+ - [ ] Verify video preview loads
+ - [ ] Tap "Next"
+ - [ ] Add caption: "Test upload"
+ - [ ] Tap "Post"
 **Test Data:** File size: 2mb
 **Expected Result:** File uploads correctly because the file is ate the correct size. The videos appears on the users profile and is playable.
 **Priority:** Medium
@@ -46,14 +46,14 @@
 **Test Type:** Negative 
 **Preconditions:** user has the correct file Content Policy, size, format, resolution, aspect ratio, Frame Rate, and caption and Hashtags(if applicable).
 **Test Steps:**  
- * film video
- * don't check file length
- * Tap "+" button to access upload screen
- * Tap "Upload" to select from device storage
- * Verify video preview loads
- * Tap "Next"
- * Add caption: "Test upload"
- * Tap "Post"
+ - [ ] film video
+ - [ ] don't check file length
+ - [ ] Tap "+" button to access upload screen
+ - [ ] Tap "Upload" to select from device storage
+ - [ ] Verify video preview loads
+ - [ ] Tap "Next"
+ - [ ] Add caption: "Test upload"
+ - [ ] Tap "Post"
 **Test Data:** File length: 605
 **Expected Result:** File uploads incorrectly because the file length is to long. The video is to long for TikTok.
 **Priority:** Medium
@@ -65,14 +65,14 @@
 **Test Type:** Boundary
 **Preconditions:** user has the correct file Content Policy, size, length, format, aspect ratio, Frame Rate, and caption and Hashtags(if applicable).
 **Test Steps:**  
- * film video
- * check file size
- * Tap "+" button to access upload screen
- * Tap "Upload" to select from device storage
- * Verify video preview loads
- * Tap "Next"
- * Add caption: "Test upload"
- * Tap "Post"
+ - [ ] film video
+ - [ ] check file size
+ - [ ] Tap "+" button to access upload screen
+ - [ ] Tap "Upload" to select from device storage
+ - [ ] Verify video preview loads
+ - [ ] Tap "Next"
+ - [ ] Add caption: "Test upload"
+ - [ ] Tap "Post"
 **Test Data:** File resolution: 720x1280
 **Expected Result:** File uploads correctly because the resolution is in range. The videos appears on the users profile and is playable.
 **Priority:** High
@@ -84,14 +84,14 @@
 **Test Type:** Boundary
 **Preconditions:** user has the correct file Content Policy, size, length, resolution, format, Frame Rate, and caption and Hashtags(if applicable).
 **Test Steps:**  
- * film video
- * check file size
- * Tap "+" button to access upload screen
- * Tap "Upload" to select from device storage
- * Verify video preview loads
- * Tap "Next"
- * Add caption: "Test upload"
- * Tap "Post"
+ - [ ] film video
+ - [ ] check file size
+ - [ ] Tap "+" button to access upload screen
+ - [ ] Tap "Upload" to select from device storage
+ - [ ] Verify video preview loads
+ - [ ] Tap "Next"
+ - [ ] Add caption: "Test upload"
+ - [ ] Tap "Post"
 **Test Data:** File Aspect_Ratio: 9:16
 **Expected Result:** File uploads correctly because the ratio is correct. The videos appears on the users profile and is playable.
 **Priority:** High
@@ -103,14 +103,14 @@
 **Test Type:** Negative
 **Preconditions:** user has the correct file Content Policy, format, size, length, resolution, aspect ratio, Frame Rate, caption, and Hashtags(if applicable).
 **Test Steps:**  
- * film video
- * check file size
- * Tap "+" button to access upload screen
- * Tap "Upload" to select from device storage
- * Verify video preview loads
- * Tap "Next"
- * Add caption
- * Tap "Post"
+ - [ ] film video
+ - [ ] check file size
+ - [ ] Tap "+" button to access upload screen
+ - [ ] Tap "Upload" to select from device storage
+ - [ ] Verify video preview loads
+ - [ ] Tap "Next"
+ - [ ] Add caption
+ - [ ] Tap "Post"
 **Test Data:** File Caption characters: 6767
 **Expected Result:** File uploads incorrectly because there are to many characters in the caption. The videos appears on the users profile and is playable.
 **Priority:** low
@@ -122,14 +122,14 @@
 **Test Type:** Black Box
 **Preconditions:** user has the correct file Content Policy, size, length, format, aspect ratio, Frame Rate, and caption and Hashtags(if applicable).
 **Test Steps:**  
-* film video
-* check file size
-* Tap "+" button to access upload screen
-* Tap "Upload" to select from device storage
-* Verify video preview loads
-* Tap "Next"
-* Add caption: "Test upload"
-* Tap "Post"
+- [ ] film video
+- [ ] check file size
+- [ ] Tap "+" button to access upload screen
+- [ ] Tap "Upload" to select from device storage
+- [ ] Verify video preview loads
+- [ ] Tap "Next"
+- [ ] Add caption: "Test upload"
+- [ ] Tap "Post"
 **Test Data:** File Frame Rate: 40
 **Expected Result:** File uploads correctly because the Frame Rate is in range. The videos appears on the users profile and is playable.
 **Priority:** High
@@ -141,14 +141,14 @@
 **Test Type:** Edge case
 **Preconditions:** user has the correct file Content Policy, size, length, format, aspect ratio, Frame Rate, and Hashtags and caption(if applicable).
 **Test Steps:**  
- * film video
- * check file size
- * Tap "+" button to access upload screen
- * Tap "Upload" to select from device storage
- * Verify video preview loads
- * Tap "Next"
- * Add caption: "Test upload"
- * Tap "Post"
+ - [ ] film video
+ - [ ] check file size
+ - [ ] Tap "+" button to access upload screen
+ - [ ] Tap "Upload" to select from device storage
+ - [ ] Verify video preview loads
+ - [ ] Tap "Next"
+ - [ ] Add caption: "Test upload"
+ - [ ] Tap "Post"
 **Test Data:** Amount of Hashtags: 0
 **Expected Result:** File uploads correctly because there is the correct amount of Hashtags per video but this video has to Hashtags. The videos appears on the users profile and is playable.
 **Priority:** Low
@@ -160,14 +160,14 @@
 **Test Type:** Edge case
 **Preconditions:** user has the correct file Content Policy, size, length, format, aspect ratio, Frame Rate, and Hashtags and caption(if applicable).
 **Test Steps:**  
- * film video
- * check file size
- * Tap "+" button to access upload screen
- * Tap "Upload" to select from device storage
- * Verify video preview loads
- * Tap "Next"
- * Add caption: "Test upload"
- * Tap "Post"
+ - [ ] film video
+ - [ ] check file size
+ - [ ] Tap "+" button to access upload screen
+ - [ ] Tap "Upload" to select from device storage
+ - [ ] Verify video preview loads
+ - [ ] Tap "Next"
+ - [ ] Add caption: "Test upload"
+ - [ ] Tap "Post"
 **Test Data:** Amount of Character: Null
 **Expected Result:** File uploads incorrectly because there is the no character in Hashtags.
 **Priority:** Low
@@ -179,14 +179,14 @@
 **Test Type:** Black Box
 **Preconditions:** user has the correct file Content Policy, size, length, format, aspect ratio, Frame Rate, and caption and Hashtags(if applicable).
 **Test Steps:**  
- * film video
- * check file size
- * Tap "+" button to access upload screen
- * Tap "Upload" to select from device storage
- * Verify video preview loads
- * Tap "Next"
- * Add caption: "Test upload"
- * Tap "Post"
+ - [ ] film video
+ - [ ] check file size
+ - [ ] Tap "+" button to access upload screen
+ - [ ] Tap "Upload" to select from device storage
+ - [ ] Verify video preview loads
+ - [ ] Tap "Next"
+ - [ ] Add caption: "Test upload"
+ - [ ] Tap "Post"
 **Test Data:** Content: Hate speech against our leader Kim Jong Biruk
 **Expected Result:** File uploads incorrectly because the Hate speech against our leader Kim Jong Biruk.
 **Priority:** Low
