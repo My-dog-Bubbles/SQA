@@ -179,14 +179,14 @@
 **Test Type:** Black Box
 **Preconditions:** user has the correct file Content Policy, size, length, format, aspect ratio, Frame Rate, and caption and Hashtags(if applicable).
 **Test Steps:**  
- - [ ] film video
- - [ ] check file size
- - [ ] Tap "+" button to access upload screen
- - [ ] Tap "Upload" to select from device storage
- - [ ] Verify video preview loads
- - [ ] Tap "Next"
- - [ ] Add caption: "Test upload"
- - [ ] Tap "Post"
+ film video
+ check file size
+ Tap "+" button to access upload screen
+ Tap "Upload" to select from device storage
+ Verify video preview loads
+ Tap "Next"
+ Add caption: "Test upload"
+ Tap "Post"
 **Test Data:** Content: Hate speech against our leader Kim Jong Biruk
 **Expected Result:** File uploads incorrectly because the Hate speech against our leader Kim Jong Biruk.
 **Priority:** Low
