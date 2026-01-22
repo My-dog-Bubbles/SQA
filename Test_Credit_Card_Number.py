@@ -63,7 +63,7 @@ class Test_Credit_Card_Number:
         assert credit_card_validator(423456789123000) == False
 
     def test_invalid_luhn_number_check(self):
-        """Test if the vise card number will be invalid if its to short"""
+        """Test if the vise card number will pass the luhn check"""
         assert credit_card_validator(4253456789123006) == False
 
     #mastercard invalid scenarios
@@ -96,7 +96,7 @@ class Test_Credit_Card_Number:
         assert credit_card_validator(513456789123001) == False
 
     def test_invalid_luhn_number_check(self):
-        """Test if the mastercard card number will be invalid if its to short"""
+        """Test if the mastercard card number will pass the luhn check"""
         assert credit_card_validator(5133456789123400) == False
 
     #American Express invalid scenarios
@@ -117,5 +117,5 @@ class Test_Credit_Card_Number:
         assert credit_card_validator(34156789123007) == False
 
     def test_invalid_luhn_number_check(self):
-        """Test if the American Express card number will be invalid if its to short"""
+        """Test if the American Express card number will pass the luhn check"""
         assert credit_card_validator(341456789123001) == False
