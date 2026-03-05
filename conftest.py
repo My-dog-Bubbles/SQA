@@ -13,5 +13,8 @@ def game():
     return {"score": 0, "multiplier": 1, "active": True}
 
 @pytest.fixture
-def game2():
-    return {"score": 0, "multiplier": 1, "active": False}
+def inventory():
+    return {"items": [], "capacity": 10, "locked": False}
+
+
+
