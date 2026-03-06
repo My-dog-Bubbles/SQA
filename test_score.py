@@ -33,10 +33,11 @@ def test_add_multiplier_inactive_game(game):
     assert result["score"] == 0 and result["multiplier"]
 
 def test_is_high_score_threshold_equal_score(game):
-    result = is_high_score(game,0)
+    game["score"] = 1
+    result = is_high_score(game,1)
     assert result == False
 
 def test_is_high_score_raise_ValueError(game):
     with pytest.raises(ValueError):
         result = is_high_score(game,0)
-        assert result == 1  
+        assert result == ValueError

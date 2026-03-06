@@ -8,29 +8,38 @@ def test_add_item_empty_string(inventory):
 
 def test_add_item_at_compacity(inventory):
     item = "marcus is not r"
-    result = add_item(inventory, item)
+    inventory["capacity"] = 0
+    inventory["items"] = ["your mom"]
     with pytest.raises(ValueError):
-        len(item) >= inventory["capacity"]
+        result = add_item(inventory, item)
         assert ValueError
 
-# def test_add_item_locked_inventory(inventory): # IDK how I would test this
-#     inventory["locked"] = True
-#     result = add_item(inventory, "item")
+def test_add_item_locked_inventory(inventory):
+    inventory["locked"] = True
+    og_items = inventory.copy()
+    result = add_item(inventory, "item")
+    assert result == og_items
 
 def test_remove_item_not_in_inventory(inventory):
-    inventory["items"] = ["your mom"]
     with pytest.raises(ValueError):
         remove_item(inventory, "your mom")
         assert ValueError
 
-# def test_remove_item_locked_inventory(inventory): # IDK how I would test this
-#     inventory["locked"] = True
-#     inventory["items"] = ["your mom"]
-#     result = add_item(inventory, "your mom")
+def test_remove_item_in_inventory(inventory):
+    inventory["items"] = ["your mom"]
+    result = remove_item(inventory, "your mom")
+    assert result["items"] == []
+
+def test_remove_item_locked_inventory(inventory):
+    inventory["locked"] = True
+    inventory["items"] = ["your mom"]
+    og_items = inventory.copy()
+    result = remove_item(inventory, "your mom")
+    assert result == og_items
 
 def test_get_item_count_zero_items(inventory):
     result = get_item_count(inventory)
-    assert len(result["items"]) == 0
+    assert result == 0
 
 def test_get_item_count_locked_inventory(inventory):
     inventory["locked"] = True

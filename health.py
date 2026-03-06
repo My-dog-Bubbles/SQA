@@ -4,7 +4,6 @@ def take_damage(player, amount):
         player["alive"] = False
     return player
 
-
 def heal(player, amount):
     if not player["alive"]:
         return player

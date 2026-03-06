@@ -1,11 +1,10 @@
 def add_item(inventory, item):
     if item == "":
-        return ValueError
+        raise ValueError
     if inventory["locked"] == True:
         return inventory
-    inventory["items"] = inventory["items"]+[item]
-    if len(inventory["items"]) > inventory["capacity"]:
-        return ValueError
+    if len(inventory["items"])+1 > inventory["capacity"]:
+        raise ValueError
     return inventory
 
 def remove_item(inventory, item):
@@ -15,7 +14,7 @@ def remove_item(inventory, item):
         inventory["items"].remove(item)
         return inventory
     else:
-        return ValueError
+        raise ValueError
 
 def get_item_count(inventory):
     return len(inventory["items"])
