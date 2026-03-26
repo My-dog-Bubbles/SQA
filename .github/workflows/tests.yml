@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: install pytest and pytest-cov
-        run: pip install pytest pytest-cov flake-8
+        run: pip install pytest pytest-cov flake8
       - name: runtest to find coverage
         run: pytest --cov
       - name: Set up Python
